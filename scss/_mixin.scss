@@ -1,4 +1,8 @@
-$color: ();
+$bg-color: #222222;
+$clock_color: #29292d;
+$heading_color: #1e90ff;
+$number_color: #2dcece;
+$shadow: #00010b;
 @mixin display($justify, $aling: center, $direction: row) {
     display: flex;
     flex-direction: $direction;
@@ -12,6 +16,10 @@ $color: ();
 
 @mixin Bx-shadow($params...) {
     box-shadow: $params;
+}
+
+@mixin text-shadow($params...) {
+    text-shadow: $params;
 }
 
 @mixin coordins($width, $height) {

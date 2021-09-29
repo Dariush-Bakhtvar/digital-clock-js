@@ -1,1 +1,86 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+body {
+  background-color: #222222;
+  font-family: "orbitron", monospace, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+body h1 {
+  margin: 0 0 10px;
+  font-size: 4.2rem;
+  color: #1e90ff;
+  text-shadow: 1px 1px 2px #00010b, 0 -5px 2px #00010b;
+}
+
+.digital-clock {
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: #29292d;
+  box-shadow: 1px 1px 12px #00010b, 0 1px 8px #00010b;
+  border: 1px solid #222222;
+  border-radius: 10px;
+  color: #2dcece;
+  text-shadow: 1px 1px 2px #00010b, 0 -5px 2px #00010b;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.time {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time .hours,
+.time .minutes,
+.time .seconds {
+  width: 30%;
+  text-align: center;
+}
+
+.time .colon {
+  width: 10%;
+}
+
+.date {
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 2px #00010b, 0 -2px 2px #00010b;
+}
+
+.colon {
+  font-size: 5rem;
+  font-weight: bold;
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
