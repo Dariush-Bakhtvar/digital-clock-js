@@ -18,12 +18,13 @@
     0 -5px 2px #00010b);
     font-size: 4rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 // times style
 .time {
     margin-bottom: 10px;
-    width: 100%;
+    width: 95%;
     @include display(space-between,
     center);
     .hours,
